@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt -br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Desafio 14</title>
+    <style>
+        body {
+        font-family:  Arial, Helvetica, sans-serif
+        }
+
+        table {
+         border-collapse: collapse;
+        } 
+
+        caption {
+        font-size: 1.3em;
+         font-weight: bold ;
+        padding: 10px;
+         }
+
+         th, td {
+        border: 1px solid gray;
+        text-align: justify;
+        padding: 10px;
+        }
+        </style>
+</head>
+<body>
+   
+    <table>
+        <thead>
+        <tr>
+        <th colspan="1" scope="col">Área</th>
+        <th colspan2="col" scope="col">Disciplinas</th>
+        <th colspan="2" scope="colgroup">Notas
+                Nota 1 Nota 2</th>
+        <th colspan="2" scope="col">Média</th>
+        </tr>
+        </thead>
+
+        <tbody>
+         <tr>
+            <th rowspan="5" scope="rowgroup">Exatas</th>
+            <tr>
+            <td>Matemática</td>
+            </tr>
+            <tr>
+             <td>Química</td>
+            </tr>
+            <tr>
+            <td>Física</td>
+             </tr>
+            <td>Economia</td>
+         </tr>
+         <tr>
+         <th colspan="5" scope="row">Média de Exatas</th>
+         <td>0.0</td>
+         </tr>
+         <tr>
+            <th rowspan="3" scope="rowgroup">Humanas</th>
+            <td>História</td>
+            <tr>
+            <td>Geografia</td>
+            </tr>
+            <tr>
+            <tr>
+            <th colspan="5" scope="row">Média de Humanas</th>
+            <td>0.0</td>
+            </tr>
+
+           
+         </tr>
+        </tbody>
+    </table>
+  
+</body>
+</html>

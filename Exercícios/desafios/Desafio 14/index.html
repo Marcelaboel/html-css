@@ -10,20 +10,30 @@
         }
 
         table {
+         width: -10px;
          border-collapse: collapse;
+        position: relative;
         } 
 
-        caption {
-        font-size: 1.3em;
-         font-weight: bold ;
-        padding: 10px;
-         }
+        thead {
+    background-color: rgb(129, 125, 125);
+    color: white;
+    }
+    thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: rgb(133, 129, 129);
+    }
 
          th, td {
-        border: 1px solid gray;
+        border: 1px solid black;
         text-align: justify;
         padding: 10px;
         }
+
+        td.num {
+    text-align: justify;
+    }
         </style>
 </head>
 <body>
@@ -31,43 +41,68 @@
     <table>
         <thead>
         <tr>
-        <th colspan="1" scope="col">Área</th>
-        <th colspan2="col" scope="col">Disciplinas</th>
-        <th colspan="2" scope="colgroup">Notas
-                Nota 1 Nota 2</th>
-        <th colspan="2" scope="col">Média</th>
+        <th colspan="1" scope="colgroup">Área</th>
+        <th colspan="1" scope="col">Disciplinas</th>
+        <th colspan="2"
+         scope="col">Nota1  Nota 2
+        </th>
+         <th colspan="1" scope="col">Média</th>
         </tr>
         </thead>
 
+        
         <tbody>
          <tr>
             <th rowspan="5" scope="rowgroup">Exatas</th>
             <tr>
-            <td>Matemática</td>
+            <td class="num">Matemática</td>
+             <td colspan="1">0.0</td>
+            <td colspan="1">0.0</td>
+             <td colspan="1">0.0</td>
             </tr>
             <tr>
-             <td>Química</td>
+             <td class="num">Química</td>
+             <td colspan="1">0.0</td>
+             <td colspan="1">0.0</td>
+              <td colspan="1">0.0</td>
             </tr>
             <tr>
-            <td>Física</td>
+            <td class="num">Física</td>
+            <td colspan="1">0.0</td>
+            <td colspan="1">0.0</td>
+             <td colspan="1">0.0</td>
              </tr>
-            <td>Economia</td>
-         </tr>
+             <tr>
+            <td class="num">Economia</td>
+            <td colspan="1">0.0</td>
+            <td colspan="1">0.0</td>
+             <td colspan="1">0.0</td>
+             </tr>
          <tr>
-         <th colspan="5" scope="row">Média de Exatas</th>
+         <th colspan="4" scope="row">Média de Exatas</th>
          <td>0.0</td>
          </tr>
          <tr>
-            <th rowspan="3" scope="rowgroup">Humanas</th>
-            <td>História</td>
+            
+            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <td class="num">História</td>
+            <td colspan="1">0.0</td>
+            <td colspan="1">0.0</td>
+             <td colspan="1">0.0</td>
             <tr>
-            <td>Geografia</td>
+            <td class="num">Geografia</td>
+            <td colspan="1">0.0</td>
+             <td colspan="1">0.0</td>
+              <td colspan="1">0.0</td>
             </tr>
             <tr>
-            <tr>
-            <th colspan="5" scope="row">Média de Humanas</th>
-            <td>0.0</td>
-            </tr>
+         <th colspan="4" scope="row">Média de Humanas</th>
+         <td>0.0</td>
+         </tr>
+         
+            
+            
+            
 
            
          </tr>

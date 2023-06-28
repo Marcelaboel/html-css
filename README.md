@@ -3,5 +3,5 @@
 
 Estou aprendendo a criar sites e agora vou e agora vou gerenciar meus repositórios.
 
-<a hrerf="https://marcelaboel.github.io/html-css/ex001/index.html">;Executar o exercício 001</a>
+<a hrerf="https://marcelaboel.github.io/html-css>
 

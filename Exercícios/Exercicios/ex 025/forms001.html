@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+     * {
+    font-family: Arial, Helvetica, sans-serif;
+     }
+    </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post">
+    <p><label for="inome">Nome:</label>
+     <input type="text" name="Nome" id="inome"></p>    
+    <p><label for="isobrenome">Sobrenome:</label>
+     <input type="text" name="Sobrenome" id="isobrenome"></p>
+    <p><input type="submit" value="Enviar"></p>
+</form>
+<!--Usar Get ou Post: 
+Get: casos menos sensíveis. Ex.: Quando não tiver senhas, número de cartão de crédito, etc..
+Para poder enviar o GET, você só pode enviar até 3.000 (trê mil letras) bytes, se ultrapassar, o GET não é um método para você, envios de fotos ou qualquer tipo de arquivo e que seu formulário faça esse tipo de envio, aí nesses casos vou usar o POST.
+OBS.: Senhas o melhor trabalhar https
+-->
 </body>
 </html>

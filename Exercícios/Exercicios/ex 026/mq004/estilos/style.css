@@ -41,7 +41,7 @@ img {
  margin: auto;
 }
 
-img#phone {display: none;}
+img#phone {display: block;}
 img#tablet {display: none;}
 img#print {display: none;}
 img#pc {display: none;}

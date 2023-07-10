@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+   </head>
+<body>
+ <header>
+  <h1>Meu Site</h1> 
+  <span id="burguer" class="material-symbols-outlined" onclick="clickmenu()">
+    menu
+    </span>
+   <menu id="itens">
+     <ul>
+        <li><a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 2</a></li>
+        <li><a href="#">Opção 3</a></li>
+        <li><a href="#">Opção 4</a></li>
+        <li><a href="#">Opção 5</a></li>
+     </ul>
+   </menu>
+ </header>
+ <main>
+   <article>
+    <h2>Testando Media Query</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quam possimus est ducimus totam labore voluptatem magni quos assumenda facilis! Necessitatibus amet qui labore ab temporibus eaque quam quod laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure pariatur unde laudantium nulla facere debitis incidunt. Suscipit sed ad facilis, error iste numquam, labore praesentium qui nisi nostrum fugiat.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, animi consectetur aspernatur error repudiandae officiis ducimus, recusandae corrupti adipisci repellat quis blanditiis ab facere necessitatibus iste numquam? Vel, inventore earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consectetur quidem labore explicabo hic laudantium perferendis, ea nobis animi, asperiores ratione dolores, quasi laborum distinctio repudiandae expedita unde non magni?</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur dolores itaque cum aperiam aliquid nam ab voluptatum sapiente debitis tempore ullam eligendi inventore, officiis eius minima architecto repellendus tempora saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nobis tempora expedita fugiat eum voluptatum natus aperiam totam! Accusamus unde atque voluptatibus id voluptatum deserunt nam excepturi magni sed provident.</p>
+ </article> 
+ </main>
+ <script>
+  function clickmenu () {
+   if (itens.style.display == 'block') {
+       itens.style.display = 'none'
+   } else {
+    itens.style.display = 'block'
+   }
+  }
+
+ </script>
+</body>
+</html>
